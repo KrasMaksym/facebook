@@ -1,0 +1,97 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+
+// Import MDI Icons
+@import '@mdi/font/css/materialdesignicons.min.css';
+
+// Import utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Import base styles
+@import 'base/reset';
+
+// Import components
+@import 'components/profile';
+@import 'components/post';
+
+// Global styles
+body {
+  font-family: $font-primary;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.container {
+  @include container;
+}
+
+// Header styles
+.header {
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  &__container {
+    @include flex(row, space-between, center);
+    padding: $spacing-md;
+    height: 56px;
+  }
+
+  &__logo {
+    height: 40px;
+    
+    img {
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    @include flex(row, center, center);
+    gap: $spacing-md;
+
+    @include mobile {
+      display: none;
+    }
+  }
+  &__mobile-menu {
+    display: none;
+    font-size: 24px;
+    color: $text-secondary;
+    
+    @include mobile {
+      display: block;
+    }
+  }
+}
+
+// Navigation styles
+.nav-link {
+  padding: $spacing-sm $spacing-md;
+  color: $text-secondary;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &.active {
+    color: $primary-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $primary-color;
+    }
+  }
+}

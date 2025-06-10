@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaliop Poland</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          <img src="/src/assets/logo.svg" alt="Kaliop Poland" />
+        </a>
+        <nav class="header__nav">
+          <a href="#" class="nav-link active">Posts</a>
+          <a href="#" class="nav-link">Information</a>
+          <a href="#" class="nav-link">Photos</a>
+          <a href="#" class="nav-link">More</a>
+        </nav>
+        <button class="header__mobile-menu">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main container">
+      <div class="profile">
+        <div class="profile__cover">
+          <img src="/src/assets/cover.jpg" alt="Cover" />
+        </div>
+        <div class="profile__info">
+          <div class="profile__avatar">
+            <img src="/src/assets/profile.webp" alt="Kaliop Poland" />
+          </div>
+          <div class="profile__details">
+            <h1>Kaliop Poland</h1>
+            <p>Dostawca rozwiązań IT dla biznesu. 20 lat doświadczenia na rynku, setki zrealizowanych projektów.</p>
+            <div class="profile__meta">
+              <div class="meta-item">
+                <span class="mdi mdi-store"></span>
+                <span>Strona · Usługi biznesowe</span>
+              </div>
+              <div class="meta-item">
+                <span class="mdi mdi-map-marker"></span>
+                <span>Portowa 13B, Słupskie, Poland</span>
+              </div>
+              <div class="meta-item">
+                <span class="mdi mdi-phone"></span>
+                <span>59 841 37 14</span>
+              </div>
+              <div class="meta-item">
+                <span class="mdi mdi-email"></span>
+                <span>biuro@kaliop.pl</span>
+              </div>
+              <div class="meta-item">
+                <span class="mdi mdi-web"></span>
+                <a href="http://kaliop.pl" target="_blank">kaliop.pl</a>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--primary">
+                <span class="mdi mdi-message"></span>
+                Wyślij wiadomość
+              </a>
+              <a href="#" class="btn btn--secondary">
+                <span class="mdi mdi-bell"></span>
+                Obserwuj
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="filters">
+          <button class="filters__button">
+            <span class="mdi mdi-filter-variant"></span>
+            Filtry
+          </button>
+        </div>
+
+        <div class="posts">
+          <article class="post">
+            <div class="post__header">
+              <div class="post__author">
+                <img src="/src/assets/logo.svg" alt="Kaliop Poland" class="post__author-img" />
+                <div class="post__meta">
+                  <h3 class="post__author-name">Kaliop Poland</h3>
+                  <div class="post__timestamp">
+                    21 czerwca o 08:51 · <span class="mdi mdi-earth"></span>
+                  </div>
+                </div>
+              </div>
+              <button class="post__more">
+                <span class="mdi mdi-dots-horizontal"></span>
+              </button>
+            </div>
+            <div class="post__content">
+              <p>Kolejne spotkanie Rady Pracodawców w <a href="#">Instytut Nauk Ścisłych i Technicznych</a> za nami! ⭐<br>
+              Rozmawialiśmy o czymś dużym — Centrum Nowoczesnych Technologii! 🧪 Jest to działanie długoterminowe, ale nie możemy wyjawiać za wiele.<br>
+              Trzymamy kciuki, żeby nadszedł moment, gdzie mówić o nim będą wszyscy. 🔥</p>
+              <img src="/src/assets/cover.jpg" alt="Meeting room" class="post__image" />
+            </div>
+            <div class="post__footer">
+              <div class="post__stats">
+                <span class="mdi mdi-star"></span>
+                Jeszcze nie oceniono (0 opinii)
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
